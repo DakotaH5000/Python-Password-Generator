@@ -1,0 +1,20 @@
+([('PasswordCreator.exe',
+   'C:\\Users\\dakot\\Desktop\\Python Password '
+   'Generator\\build\\PasswordCreator\\PasswordCreator.exe',
+   'EXECUTABLE'),
+  ('python311.dll', 'C:\\Python311\\python311.dll', 'BINARY'),
+  ('_lzma.pyd', 'C:\\Python311\\DLLs\\_lzma.pyd', 'EXTENSION'),
+  ('_bz2.pyd', 'C:\\Python311\\DLLs\\_bz2.pyd', 'EXTENSION'),
+  ('unicodedata.pyd', 'C:\\Python311\\DLLs\\unicodedata.pyd', 'EXTENSION'),
+  ('select.pyd', 'C:\\Python311\\DLLs\\select.pyd', 'EXTENSION'),
+  ('_socket.pyd', 'C:\\Python311\\DLLs\\_socket.pyd', 'EXTENSION'),
+  ('_ctypes.pyd', 'C:\\Python311\\DLLs\\_ctypes.pyd', 'EXTENSION'),
+  ('_decimal.pyd', 'C:\\Python311\\DLLs\\_decimal.pyd', 'EXTENSION'),
+  ('_hashlib.pyd', 'C:\\Python311\\DLLs\\_hashlib.pyd', 'EXTENSION'),
+  ('VCRUNTIME140.dll', 'C:\\Python311\\VCRUNTIME140.dll', 'BINARY'),
+  ('libffi-8.dll', 'C:\\Python311\\DLLs\\libffi-8.dll', 'BINARY'),
+  ('libcrypto-3.dll', 'C:\\Python311\\DLLs\\libcrypto-3.dll', 'BINARY'),
+  ('base_library.zip',
+   'C:\\Users\\dakot\\Desktop\\Python Password '
+   'Generator\\build\\PasswordCreator\\base_library.zip',
+   'DATA')],)
