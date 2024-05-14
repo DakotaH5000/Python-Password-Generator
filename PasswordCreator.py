@@ -29,6 +29,7 @@ def generatePassword(length, specChar):
                 newChar = str(generateSymbol())
                 randomPassword.append(newChar)
                 passLength += 1
+#FIX ME Capital letters not used in password if symbols are not!
     if specChar == "False" or specChar == "false":
         while length > passLength:
             charType = random.randrange(0,2)
@@ -62,6 +63,7 @@ def generateCapital():
     num = chr(num)
     return num
 
+#Rework this function, most websites don't allow excape keys in passwords. 
 def generateSymbol():
     num = random.randrange(33,44)
     num = chr(num)
