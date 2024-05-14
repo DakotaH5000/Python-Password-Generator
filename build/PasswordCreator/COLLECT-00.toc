@@ -1,5 +1,5 @@
 ([('PasswordCreator.exe',
-   'C:\\Users\\dakot\\Desktop\\Python Password '
+   'C:\\Users\\dakot\\Documents\\WebDev\\Python Password '
    'Generator\\build\\PasswordCreator\\PasswordCreator.exe',
    'EXECUTABLE'),
   ('python311.dll', 'C:\\Python311\\python311.dll', 'BINARY'),
@@ -15,6 +15,6 @@
   ('libffi-8.dll', 'C:\\Python311\\DLLs\\libffi-8.dll', 'BINARY'),
   ('libcrypto-3.dll', 'C:\\Python311\\DLLs\\libcrypto-3.dll', 'BINARY'),
   ('base_library.zip',
-   'C:\\Users\\dakot\\Desktop\\Python Password '
+   'C:\\Users\\dakot\\Documents\\WebDev\\Python Password '
    'Generator\\build\\PasswordCreator\\base_library.zip',
    'DATA')],)

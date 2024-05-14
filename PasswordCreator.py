@@ -1,4 +1,5 @@
 import random
+import os
 import pyperclip as pc
 passwordService = input("What service is this password for? ")
 lengthPw = int(input("Enter a password length between 1-64:"))
