@@ -1,6 +1,6 @@
 import random
-import os
-import pyperclip as pc
+import os;
+import pyperclip as pc;
 passwordService = input("What service is this password for? ")
 lengthPw = int(input("Enter a password length between 1-64:"))
 specCharacter = input("Special characters (True/False):") 
@@ -10,7 +10,7 @@ def generatePassword(length, specChar):
     randomPassword = []
     passLength = 0
 
-    if specChar == "True" or specChar == "true":
+    if "t" in specChar.lower():
         while length > passLength:
             charType = random.randrange(0,4)
             if charType == 0:
@@ -29,10 +29,9 @@ def generatePassword(length, specChar):
                 newChar = str(generateSymbol())
                 randomPassword.append(newChar)
                 passLength += 1
-#FIX ME Capital letters not used in password if symbols are not!
-    if specChar == "False" or specChar == "false":
+    if specCharacter == "false" or specCharacter == "f" or specCharacter == "no":
         while length > passLength:
-            charType = random.randrange(0,2)
+            charType = random.randrange(0,3)
             if charType == 0:
                 newChar = str(generateNumber())
                 passLength += 1
@@ -65,7 +64,7 @@ def generateCapital():
 
 #Rework this function, most websites don't allow excape keys in passwords. 
 def generateSymbol():
-    num = random.randrange(33,44)
+    num = random.randrange(33,48)
     num = chr(num)
     return num
 
@@ -73,7 +72,12 @@ newPass = generatePassword(lengthPw, specCharacter)
 print(f'{passwordService}: {newPass}')
 
 clipboard = input('Copy to clipboard? (Y/N): ')
-if clipboard == 'y' or clipboard == 'yes' or clipboard == 'Yes' or clipboard == 'Y':
+
+if clipboard.lower() in ["y", "yes"]:
     pc.copy(f'{passwordService}: {newPass}')
+elif clipboard.lower() in ["n", "no"]:
+    pass 
+else:
+    print("Invalid input. Please enter Y, N, Yes, or No.")
 
 input('Press ENTER to continue')
