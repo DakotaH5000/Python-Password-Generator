@@ -1,11 +1,43 @@
 import random
 import os;
 import pyperclip as pc;
-passwordService = input("What service is this password for? ")
-lengthPw = int(input("Enter a password length between 1-64:"))
+import tkinter as tk;
+
+#Tkinter configs
+window = tk.Tk()
+
+passWordLabel = tk.Label(window, text="Service password is for?")
+passWordLabel.pack()
+
+password_var = tk.StringVar()
+passwordService = tk.Entry(window, textvariable=password_var, font=('calibre', 10, 'normal'))
+passwordService.pack()
+
+
+lengthLabel = tk.Label(window, text="Password length?")
+lengthLabel.pack()
+length_var = tk.IntVar()
+lengthPw = tk.Entry(window, textvariable=length_var)
+lengthPw.pack()
+
+
+specCharacterLabel = tk.Label(window, text="Special characters?")
+specCharacterLabel.pack()
+spceChar_var = tk.BooleanVar()
+specCharLabel = tk.Entry(window, textvariable=spceChar_var, text="t/f")
+specCharLabel.pack()
+
+window.mainloop()   
+
+
+
+#user input areas
+#passwordService = input("What service is this password for? ")
+#lengthPw = int(input("Enter a password length between 1-64:"))
 specCharacter = input("Special characters (True/False):") 
 
 
+#function definitions
 def generatePassword(length, specChar):
     randomPassword = []
     passLength = 0
