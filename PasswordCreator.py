@@ -93,12 +93,18 @@ specChar.pack()
 
 
 def formatPW(event):
-    lengthPw = length_var.get()  # Example value, you should get this from user input as well
-    print(f' {passwordService.get()}: {generatePassword(lengthPw, spceChar_var.get())} ')
+    lengthPw = int(length_var.get())  # Getting the length from user input
+    password = generatePassword(lengthPw, spceChar_var.get())
+    password_text.delete('1.0', tk.END)
+    password_text.insert(tk.END, f'{passwordService.get()}: {password}')
 
 submitButton = tk.Button(window, text="Generate Password")
 submitButton.bind("<Button-1>", formatPW)
 submitButton.pack()
+
+password_text = tk.Text(window, height=2, wrap='word')
+password_text.pack()
+
 
 window.mainloop()   
 
